@@ -1,0 +1,5 @@
+forge "http://forge.puppetlabs.com"
+
+mod 'anchor',
+  :git => 'git@github.com:github/puppet',
+  :path => 'modules/anchor'

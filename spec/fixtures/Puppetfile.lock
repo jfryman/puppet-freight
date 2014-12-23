@@ -1,0 +1,10 @@
+GIT
+  remote: git@github.com:github/puppet
+  path: modules/anchor
+  ref: master
+  sha: af3568f1a447254c57a2f50377acaf4a30c0f218
+  specs:
+    anchor (0.0.1)
+
+DEPENDENCIES
+  anchor (>= 0)

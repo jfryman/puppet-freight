@@ -1,0 +1,22 @@
+####### This file is managed by Puppet #######
+
+# Directories for the Freight library and Freight cache.  Your web
+# server's document root should be `$VARCACHE`.
+VARLIB="<%= @varlib %>"
+VARCACHE="<%= @varcache %>"
+
+# Default `Origin` and `Label` fields for `Release` files.
+ORIGIN="<%= @origin %>"
+LABEL="<%= @label %>"
+
+# GPG key to use to sign repositories.  This is required by the `apt`
+# repository provider.  Use `gpg --gen-key` (see `gpg`(1) for more
+# details) to generate a key and put its email address here.
+GPG="<%= @gpg %>"
+<% if @gnupghome -%>
+GNUPGHOME="<%= @gnupghome %>"
+<% end %>
+
+CACHE="<%= @cache %>"
+
+export GNUPGHOME
